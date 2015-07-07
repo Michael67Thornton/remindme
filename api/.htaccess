@@ -1,0 +1,5 @@
+#simple htaccess rewrite all to php api.php
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^?]*)$ index.php?$1 [NC,L,QSA]

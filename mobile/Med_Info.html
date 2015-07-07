@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Remind Me </title>
+		<link rel="stylesheet" href="themes/Bootstrap.css">
+
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+
+        <script src="themes/js/scripts.js"></script>
+	</head>
+	<body>
+		<div data-role="page" data-theme="a">
+			<div data-role="header" data-position="inline">
+				
+				<div data-role="navbar">
+					<ul>
+                        <li><a href="#nhi_enter" data-icon="info">NHI</a></li>
+						<li><a href="Index.html" data-icon="home">Home</a></li>
+						<li><a href="#contact_doctor" data-icon="star">Contact DR</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div id="Main-Div" data-role="content" data-theme="a">
+				<ul>
+					<li>
+						<h2>Nexium</h2>
+						<label >This is a cool drug to get</label>
+						<small>Left : <span class="total_left"></span> / 100</small>
+					</li>
+				</ul>
+
+                <table id="example"  data-role="table" class="ui-responsive"  cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th class ="nhi_number">Id</th>
+                        <th>Drug Name</th>
+                        <th>Prescription</th>
+                        <th>Drug Amount</th>
+
+
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <th>Id</th>
+                        <th>Drug Name</th>
+                        <th>Prescription</th>
+                        <th>Drug Amount</th>
+                    </tr>
+                    </tbody>
+                </table>
+
+			</div>
+		
+		</div>
+	</body>
+
+</html>

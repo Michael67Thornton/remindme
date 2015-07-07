@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+        <link rel="apple-touch-icon" href="themes/images/icon.jpg" type="" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="apple-touch-startup-image" href="themes/images/icon.jpg" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+		<title>Medical remineder </title>
+		<link rel="stylesheet" href="themes/Bootstrap.css">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        <script src="themes/js/scripts.js"></script>
+        <script>
+            var global = {
+                test : "test"
+            }
+        </script>
+	</head>
+	<body>
+    <!-------------------------------------------------------------new page------------------------------------------->
+                <div  id="nhi_enter" data-role="page" data-theme="a">
+
+                    <div data-role="header" data-position="inline">
+                        <div data-role="navbar">
+                            <ul>
+                                <li><a href="#nhi_enter" data-icon="info">NHI</a></li>
+                                <li><a href="#home" data-icon="home">Home</a></li>
+                                <li><a href="#medical" data-icon="star">Contact DR</a></li>
+                            </ul>
+            </div>
+
+
+
+            <div id="Main-Div_Nhi" data-role="content" data-theme="a">
+                <form method="post" action="" data-ajax="">
+                    <label for="name">NHI : <span>*</span></label>
+                    <input type="text" name="nhi" id="nhi_number" placeholder="NHI number">
+
+
+                    <input type="submit" id="nhi_call" data-inline="true" value="Submit" data-theme="c">
+                </form>
+
+
+
+            </div>
+        </div>
+                    </div>
+
+        <!----------------------------------------end------------------------------------------->
+		<div  id="home" data-role="page" data-theme="a">
+            <div data-role="header" data-position="inline">
+
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#nhi_enter" data-icon="info">NHI</a></li>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#contact_doctor" data-icon="star">Contact DR</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content" data-theme="a">
+
+                <h2>Medication</h2>
+                <ul data-role="listview" data-inset="true" data-divider-theme="a">
+                    <li data-role="list-divider">Nexium</li>
+                    <li data-icon="info"><a href="#prec">Prescription & info</a></li>
+
+                </ul>
+
+                <ul data-role="listview" data-inset="true" data-divider-theme="b">
+                    <li data-role="list-divider">Plavix</li>
+                    <li data-icon="info"><a href="">Prescription & info</a></li>
+                </ul>
+
+                <ul data-role="listview" data-inset="true" data-divider-theme="c">
+                    <li data-role="list-divider">Abilify</li>
+                    <li data-icon="info"><a href="">Prescription & info</a></li>
+                </ul>
+
+                <ul data-role="listview" data-inset="true" data-divider-theme="d">
+                    <li data-role="list-divider">Crestor</li>
+                    <li data-icon="info"><a href="">Prescription & info</a></li>
+                </ul>
+
+                <ul data-role="listview" data-inset="true" data-divider-theme="e">
+                    <li data-role="list-divider">Nexium</li>
+                    <li data-icon="info"><a href="">Prescription & info</a></li>
+                </ul>
+
+                <ul data-role="listview" data-inset="true" data-divider-theme="f">
+                    <li data-role="list-divider">Abilify</li>
+                    <li data-icon="info"><a href="">Prescription & info</a></li>
+                </ul>
+
+            </div>
+            <div data-role="footer"
+                 data-position="fixed"
+                 data-id="vs_footer"
+                    data-theme="a">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home"
+                               data-role="button"
+                               data-icon="home"
+                                >Home</a></li>
+                        <li><a href="#blog"
+                               data-role="button"
+                               data-icon="info"
+                                >Doctor</a></li>
+
+                    </ul>
+                </div><!-- navbar -->
+            </div><!-- footer -->
+        </div>
+
+
+    <!-------------------------------------------------------------new page------------------------------------------->
+        <div  id="contact_doctor" data-role="page" data-theme="a">
+
+            <div data-role="header" data-position="inline">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#nhi_enter" data-icon="info">NHI</a></li>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#medical" data-icon="star">Contact DR</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div id="Main-Div_pre" data-role="content" data-theme="a">
+
+
+                    <form method="post" action="" data-ajax="">
+                        <label for="name">Patient Name : <span>*</span></label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+
+                        <label for="info">Message:  <span>*</span></label>
+                        <textarea name="addinfo" id="info" placeholder="Message"></textarea>
+
+
+                        <input type="submit" data-inline="true" value="Submit" data-theme="d">
+                    </form>
+
+
+
+                </div>
+            </div>
+
+            </div>
+<!----------------------------------------end------------------------------------------->
+            <div id="prec" data-role="page" data-theme="a">
+                <div data-role="header" data-position="inline">
+
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#nhi_enter" data-icon="info">NHI</a></li>
+                            <li><a href="Index.html" data-icon="home">Home</a></li>
+                            <li><a href="#contact_doctor" data-icon="star">Contact DR</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div id="Main-Div" data-role="content" data-theme="a">
+                    <ul>
+                        <li>
+                            <h2>Nexium</h2>
+                            <label >This is a cool drug to get</label>
+
+                            </br>
+                            <label >First Name : <span class="fname"></span></label>
+                            <label >last Name : <span class="lname"></span></label>
+                            <label >Pharmacy Name : <span class="pharmacy_name"></span></label>
+                            <label>Drug Name: <span class="drug_name"></span></label>
+                            <label >Daily Amount :  <span class="daily_amount"></span></label>
+                            <label >Order :  <span class="order"></span></label>
+                            <small>Left : <span class="total_left"></span> / 100</small>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+<!-------------------------------------------------------precription medicine------------>
+
+        </div>
+    <script>
+        $("#nhi_call").click(function(e){
+            e.preventDefault();
+            var nhi_details = {
+                'nhi' : $("#nhi_number").val()
+            }
+            console.log("sending",nhi_details)
+            $.ajax({
+                url : 'http://remindme.nzhost.me/api/getClient',
+                data: nhi_details,
+                dataType : 'jsonp',
+                success : function(response) {
+                    /*
+                     daily_amount: "12"drug_id: "4"drug_name: "50mg Nicotine"fname: "Luke"lname: "H"mobile_number: "02102351775"nhi_num: "NZ1881"notified: "1"order: "1"pharmacy_name: "Pharmacy 1"total_left: "9"
+                     */
+                    if (response.success == false || response.data.length < 0)
+                    alert("failed to get user info");
+
+                    if (response.success == true)
+                    $.map(response.data,function(value,key){
+                        console.log("key",key)
+
+                        //input on span/div
+                        try{ $('.' + key).text(value);}catch(e){}
+                        //input on input
+                        if ($('.' + key +' :input').length > 1){
+                            $('.' + key +' :input').val(value)
+                        }
+
+                        if (key == 'order'){
+                            var theOrder  = (value == 0)? "No" : "Yes";
+                            $('.order').text(theOrder);
+                        }
+                    //}
+
+
+                    })
+                    console.log("response",response)
+
+
+                }
+            });
+
+
+        })
+
+    </script>
+	</body>
+</html>
