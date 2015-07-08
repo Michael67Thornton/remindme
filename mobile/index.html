@@ -73,7 +73,7 @@
 
                 <h2>Medication</h2>
                 <ul data-role="listview" data-inset="true" data-divider-theme="a">
-                    <li data-role="list-divider">Nexium</li>
+                    <li data-role="list-divider"><span class="drug_name"></span></li>
                     <li data-icon="info"><a href="#prec">Prescription & info</a></li>
 
                 </ul>
@@ -104,6 +104,7 @@
                 </ul>
 
             </div>
+            <!--
             <div data-role="footer"
                  data-position="fixed"
                  data-id="vs_footer"
@@ -120,8 +121,10 @@
                                 >Doctor</a></li>
 
                     </ul>
-                </div><!-- navbar -->
-            </div><!-- footer -->
+                </div></div>
+                <!-- navbar -->
+
+
         </div>
 
 
@@ -166,7 +169,7 @@
                     <div data-role="navbar">
                         <ul>
                             <li><a href="#nhi_enter" data-icon="info">NHI</a></li>
-                            <li><a href="Index.html" data-icon="home">Home</a></li>
+                            <li><a href="#home" data-icon="home">Home</a></li>
                             <li><a href="#contact_doctor" data-icon="star">Contact DR</a></li>
 
                         </ul>
@@ -175,8 +178,8 @@
                 <div id="Main-Div" data-role="content" data-theme="a">
                     <ul>
                         <li>
-                            <h2>Nexium</h2>
-                            <label >This is a cool drug to get</label>
+                            <h2><span class="drug_name"></span></h2>
+
 
                             </br>
                             <label >First Name : <span class="fname"></span></label>
@@ -214,25 +217,28 @@
                     if (response.success == false || response.data.length < 0)
                     alert("failed to get user info");
 
-                    if (response.success == true)
-                    $.map(response.data,function(value,key){
-                        console.log("key",key)
+                    if (response.success == true){
+                        $.map(response.data,function(value,key){
+                            console.log("key",key)
 
-                        //input on span/div
-                        try{ $('.' + key).text(value);}catch(e){}
-                        //input on input
-                        if ($('.' + key +' :input').length > 1){
-                            $('.' + key +' :input').val(value)
-                        }
+                            //input on span/div
+                            try{ $('.' + key).text(value);}catch(e){}
+                            //input on input
+                            if ($('.' + key +' :input').length > 1){
+                                $('.' + key +' :input').val(value)
+                            }
 
-                        if (key == 'order'){
-                            var theOrder  = (value == 0)? "No" : "Yes";
-                            $('.order').text(theOrder);
-                        }
-                    //}
+                            if (key == 'order'){
+                                var theOrder  = (value == 0)? "No" : "Yes";
+                                $('.order').text(theOrder);
+                            }
+                            //}
 
 
-                    })
+                        })
+                        window.location = "#home";
+                    }
+
                     console.log("response",response)
 
 
