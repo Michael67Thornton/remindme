@@ -58,15 +58,16 @@
             <table id="patients" class="table table-striped table-hover">
                 <thead>
                 <tr>
-                    <th>NHI</th>
+                      <th>NHI</th>
                     <th>Patient</th>
+					<th>Age</th>
+					<th>Gender</th>
                     <th>Medication</th>
                     <th>Pharmacy Details</th>
                     <th>Contact Number</th>
                     <th>Frequency</th>
                     <th>Notification Schedule</th>
-
-                    <th>Medication Left</th>
+                    <th>Med Count</th>
                     <th width="100px">Order</th>
                     <th></th>
                 </tr>
